@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="E2B.png">
+    <title>E2B</title>
+    <style>
+		html,
+        body{
+			margin: 0;
+			padding: 0;
+            width: 100%;
+			height: 100%;
+			background: #cbf1ec ;
+			background-repeat: no-repeat;
+		}
+
+        #animated-header {
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 0.15em solid green;
+            animation: typing 5s steps(26, end) infinite;
+        }
+        
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+		input[type='text']
+		{
+			width: 50%;
+			padding: 0.5rem 0.5rem;
+			border: none;
+			border-radius: 0.5rem;
+			transition: all 0.2s ease-in-out;
+		}
+
+        input[type='submit']
+		{
+            margin: 5px 0;
+			width: 25%;
+			padding: 0.5rem 1.1rem;
+			border: 1.5px solid #2be9cd;
+            background-color: #c7f0e9;
+			border-radius: 0.5rem;
+            cursor: pointer;
+		}
+
+        input[type='text']:focus,
+		input[type='text']:active
+		{
+			outline: none;
+			border: 1.5px solid #2be9cd;
+		}
+
+        footer {
+            margin: 0 65px;
+            bottom: 5px;
+            padding: 2px auto;
+            position: fixed;
+            font-weight: bold;
+        }
+	</style>
+</head>
+
+<body style="display: block; justify-content: center; max-height: 400px; width: 300px;">
+    <center><h2 id="animated-header">Welcome to E2B Dictionary.</h2></center>
+    <center>
+        <span style="display: inline; width: 90%;">
+            <form id="myForm" action="">
+                <input type="text" name="word" id="word" placeholder="Enter a word" required>
+                <input type="submit" value="Search">
+            </form>
+        </span>
+    </center>
+
+    <center><b><p id="output"></p></b></center>
+    <center><b id="more_output"></b></center>
+
+    <footer>Developed By <a href="https://www.linkedin.com/in/rkpust" target="_blank" style="text-decoration: none;">Rezaul Karim</a></footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
