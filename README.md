@@ -3,6 +3,10 @@
   <img height="150" src="https://github.com/rkpust/E2B-Dictionary/blob/master/E2B.png"/>
 </div>
 
+<div align="center">
+  <img height="400" width="80%" src="https://github.com/rkpust/E2B-Dictionary/blob/master/E2B%20Output.jpg"/>
+</div>
+
 ## Step 1
 To download this extension by using git, run this command.
 ```bash
