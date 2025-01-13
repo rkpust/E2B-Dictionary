@@ -18,7 +18,7 @@ myForm.addEventListener("submit", function (event){
   Output.innerText = "";
 
   url = "https://www.english-bangla.com/dictionary/" + word;
-  const corsProxyUrl = 'https://corsproxy.io/?' + encodeURIComponent(url);
+  const corsProxyUrl = 'https://corsproxy.io/?url=' + encodeURIComponent(url);
 
   const req = new XMLHttpRequest();
   req.open("GET", corsProxyUrl);
